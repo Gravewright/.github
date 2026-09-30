@@ -8,7 +8,7 @@ Prepare your worlds, bring your players together and run your sessions with maps
 
 ### Get started
 
-**[Download Gravewright 0.1.2](https://github.com/Gravewright/gravewright/releases/tag/v0.1.2)** · [Source code](https://github.com/Gravewright/gravewright) · [Documentation](https://github.com/Gravewright/gravewright/blob/main/docs/README.md)
+**[Download Gravewright 0.1.3](https://github.com/Gravewright/gravewright/releases/tag/v0.1.3)** · [Source code](https://github.com/Gravewright/gravewright) · [Documentation](https://github.com/Gravewright/gravewright/blob/main/docs/README.md)
 
 On Windows, download the complete project ZIP from the release, extract it to a writable folder and double-click **`Install Windows.bat`**. The installer prepares uv, Python, Node.js/npm, dependencies and frontend assets, asks for your settings and generates **`Gravewright Runner.bat`**. Open the generated Runner to start the application in your browser. A shortcut with the project icon is created beside the launcher when possible.
 
@@ -22,7 +22,9 @@ The Runner requires Windows 10 version 1803 or newer, or Windows 11, on x64. Dow
 - **Session tools:** realtime chat, dice, journals, quests, audio, cards, combat and compendiums.
 - **Extensions:** module manifests, lifecycle hooks and documented Python, HTTP, WebSocket and browser interfaces.
 
-Gravewright 0.1.2 is the current release and remains an early development preview. The application UI currently supports English; project documentation is available in English and Brazilian Portuguese. Read the [user guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/user-guide.md) for supported workflows and current limitations.
+Gravewright 0.1.3 is the current release and remains an early development preview. The application UI currently supports English; project documentation is available in English and Brazilian Portuguese. Read the [user guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/user-guide.md) for supported workflows and current limitations.
+
+Version 0.1.3 fixes local ZIP installation for modules and systems: valid selected files now upload correctly instead of showing **Select a ZIP file.**
 
 ### Explore and contribute
 
