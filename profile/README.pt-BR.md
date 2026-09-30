@@ -8,9 +8,9 @@ Prepare seus mundos, reúna os jogadores e conduza suas sessões com mapas, fich
 
 ### Comece a jogar
 
-**[Baixar Alpha 0.1.0](https://github.com/Gravewright/gravewright/releases/tag/v0.1.0-alpha.0)** · [Código-fonte](https://github.com/Gravewright/gravewright) · [Documentação](https://github.com/Gravewright/gravewright/blob/main/docs/README.pt-BR.md)
+**[Baixar Gravewright 0.1.2](https://github.com/Gravewright/gravewright/releases/tag/v0.1.2)** · [Código-fonte](https://github.com/Gravewright/gravewright) · [Documentação](https://github.com/Gravewright/gravewright/blob/main/docs/README.pt-BR.md)
 
-No Windows, baixe o ZIP completo do projeto na release, extraia para uma pasta com permissão de escrita e dê dois cliques em **`Gravewright Runner.bat`**. O Runner verifica uv, Python e Node.js/npm, instala ferramentas e dependências ausentes, compila o frontend e abre a aplicação no navegador. Quando possível, cria um atalho com o ícone do projeto ao lado do executor.
+No Windows, baixe o ZIP completo do projeto na release, extraia para uma pasta com permissão de escrita e dê dois cliques em **`Install Windows.bat`**. O instalador prepara uv, Python, Node.js/npm, dependências e frontend, pergunta suas configurações e gera **`Gravewright Runner.bat`**. Abra o Runner gerado para iniciar a aplicação no navegador. Quando possível, cria um atalho com o ícone do projeto ao lado do executor.
 
 O Runner requer Windows 10 versão 1803 ou superior, ou Windows 11, em x64. Os downloads exigem internet. Os dados das campanhas ficam em `%LOCALAPPDATA%\Gravewright\data`, separados do código. Esse perfil funciona no computador local; para receber jogadores pela rede, siga o guia de implantação.
 
@@ -22,7 +22,7 @@ O Runner requer Windows 10 versão 1803 ou superior, ou Windows 11, em x64. Os d
 - **Ferramentas de sessão:** chat em tempo real, dados, diários, missões, áudio, cartas, combate e compêndios.
 - **Extensões:** manifests de módulos, hooks de ciclo de vida e interfaces Python, HTTP, WebSocket e de navegador documentadas.
 
-Alpha 0.1.0 é a release atual. A interface da aplicação suporta inglês; a documentação do projeto está disponível em inglês e português brasileiro. Consulte os fluxos suportados e as limitações atuais no [guia de uso](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/user-guide.md).
+Gravewright 0.1.2 é a release atual e continua em desenvolvimento inicial. A interface da aplicação suporta inglês; a documentação do projeto está disponível em inglês e português brasileiro. Consulte os fluxos suportados e as limitações atuais no [guia de uso](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/user-guide.md).
 
 ### Explore e contribua
 
