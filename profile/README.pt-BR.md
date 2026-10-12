@@ -31,15 +31,15 @@ Os dados das campanhas ficam separados da aplicação; o
 [guia do Runner](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/windows-runner.md)
 explica configurações e backups. A documentação apresenta outras formas de hospedar.
 
-### Vem aí: 0.2.0 Alpha
+### Disponível: 0.2.0 Alpha
 
-A próxima Alpha traz fichas independentes por sistema, combate no PDF System com
+A versão 0.2.0 Alpha traz fichas independentes por sistema, combate no PDF System com
 indicadores de turno, busca de campanha respeitando permissões, camadas de suporte
 para o mestre e uma interface mais coesa. Autores de módulos também ganham
 catálogos privados de tradução pela API do VTT, documentados no Translator 0.1.2.
 
-**O download público continua na 0.1.3.** O pacote 0.2.0 está preparado, mas ainda
-não foi publicado. O Gravewright segue em desenvolvimento Alpha; mantenha backups
+**[Baixe o Gravewright 0.2.0 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.0).**
+O Gravewright segue em desenvolvimento Alpha; mantenha backups
 das campanhas importantes e consulte os fluxos disponíveis no
 [guia de uso](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/user-guide.md).
 

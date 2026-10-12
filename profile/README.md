@@ -31,15 +31,15 @@ Campaign data is stored separately from the application; the
 [Runner guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/windows-runner.md)
 explains settings and backups. Other hosting options are covered in the documentation.
 
-### Coming next: 0.2.0 Alpha
+### Available now: 0.2.0 Alpha
 
-The next Alpha brings independent system sheets, PDF System combat with turn
+Version 0.2.0 Alpha brings independent system sheets, PDF System combat with turn
 indicators, permission-aware campaign search, GM support layers and a more
 consistent interface. Module authors also gain private translation catalogs
 through the VTT API, documented in Translator 0.1.2.
 
-**The public download is still 0.1.3.** The 0.2.0 package is prepared but has not yet
-been published. Gravewright remains in active Alpha development; keep backups of
+**[Download Gravewright 0.2.0 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.0).**
+Gravewright remains in active Alpha development; keep backups of
 important campaigns and check the [user guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/user-guide.md)
 for supported workflows.
 
