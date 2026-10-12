@@ -1,46 +1,69 @@
 # Gravewright
 
-**Uma mesa virtual para jogar RPG pelo navegador, hospedada por você.**
+**Seu mundo. Seu grupo. Sua próxima grande sessão.**
 
 [English](https://github.com/Gravewright/.github/blob/main/profile/README.md) · [Português (Brasil)](https://github.com/Gravewright/.github/blob/main/profile/README.pt-BR.md)
 
-Prepare seus mundos, reúna os jogadores e conduza suas sessões com mapas, fichas PDF e ferramentas de mesa em tempo real. O Gravewright é open source, com um núcleo extensível e documentação para usuários e desenvolvedores.
+O Gravewright é uma mesa virtual gratuita e open source para suas campanhas de RPG.
+Prepare a cena, reúna o grupo pelo navegador e tenha mapas, personagens e
+ferramentas de sessão em um mundo que você hospeda e controla.
 
-### Comece a jogar
+**[Conheça o Gravewright](https://gravewright.com/pt-br.html)** · [Baixar](https://github.com/Gravewright/gravewright/releases/latest) · [Primeiros passos](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/getting-started.md)
 
-**[Baixar Gravewright 0.1.3](https://github.com/Gravewright/gravewright/releases/tag/v0.1.3)** · [Código-fonte](https://github.com/Gravewright/gravewright) · [Documentação](https://github.com/Gravewright/gravewright/blob/main/docs/README.pt-BR.md)
+### Um lugar para sua campanha
 
-No Windows, baixe o ZIP completo do projeto na release, extraia para uma pasta com permissão de escrita e dê dois cliques em **`Install Windows.bat`**. O instalador prepara uv, Python, Node.js/npm, dependências e frontend, pergunta suas configurações e gera **`Gravewright Runner.bat`**. Abra o Runner gerado para iniciar a aplicação no navegador. Quando possível, cria um atalho com o ícone do projeto ao lado do executor.
+- **Crie a atmosfera.** Prepare cenas com iluminação, névoa, paredes, áudio e efeitos visuais. Revele o mundo no seu ritmo.
+- **Traga seus personagens.** Use fichas PDF, mapeie os campos e conecte personagens aos tokens no tabuleiro.
+- **Mantenha o ritmo da sessão.** Role dados, compartilhe anotações, compre cartas e acompanhe o combate sem sair da mesa.
+- **Leve a história adiante.** Mantenha diários, missões, materiais e descobertas juntos entre as sessões.
+- **Deixe a mesa com a sua cara.** Hospede sua instalação e adicione sistemas e módulos pelo Marketplace.
 
-O Runner requer Windows 10 versão 1803 ou superior, ou Windows 11, em x64. Os downloads exigem internet. Os dados das campanhas ficam em `%LOCALAPPDATA%\Gravewright\data`, separados do código. Esse perfil funciona no computador local; para receber jogadores pela rede, siga o guia de implantação.
+### Comece sua primeira mesa
 
-### Na mesa
+Baixe o ZIP completo do projeto, extraia e abra **Install Windows.bat**.
+O instalador prepara sua instalação e cria o **Gravewright Runner.bat**.
+Abra o Runner, crie sua conta de administrador no navegador e comece sua campanha.
+Esse launcher requer Windows 10 (1803+) ou Windows 11, em x64.
 
-- **Campanhas e jogadores:** contas, convites, permissões de acesso e transmissão de cenas.
-- **Mapas e cenas:** grades, tokens, paredes, névoa, iluminação, medição, desenhos, pings e efeitos.
-- **Personagens:** atores, fichas PDF e mapeamento de campos pelo sistema nativo Gravewright PDF System.
-- **Ferramentas de sessão:** chat em tempo real, dados, diários, missões, áudio, cartas, combate e compêndios.
-- **Extensões:** manifests de módulos, hooks de ciclo de vida e interfaces Python, HTTP, WebSocket e de navegador documentadas.
+O Runner inicia localmente no seu computador. Para convidar jogadores pela rede
+ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/deployment.md).
+Os dados das campanhas ficam separados da aplicação; o
+[guia do Runner](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/windows-runner.md)
+explica configurações e backups. A documentação apresenta outras formas de hospedar.
 
-Gravewright 0.1.3 é a release atual e continua em desenvolvimento inicial. A interface da aplicação suporta inglês; a documentação do projeto está disponível em inglês e português brasileiro. Consulte os fluxos suportados e as limitações atuais no [guia de uso](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/user-guide.md).
+### Vem aí: 0.2.0 Alpha
 
-A versão 0.1.3 corrige a instalação de módulos e sistemas por ZIP local: arquivos válidos selecionados agora são enviados corretamente, sem o erro **Selecione um arquivo ZIP.**
+A próxima Alpha traz fichas independentes por sistema, combate no PDF System com
+indicadores de turno, busca de campanha respeitando permissões, camadas de suporte
+para o mestre e uma interface mais coesa. Autores de módulos também ganham
+catálogos privados de tradução pela API do VTT, documentados no Translator 0.1.2.
 
-### Explore e contribua
+**O download público continua na 0.1.3.** O pacote 0.2.0 está preparado, mas ainda
+não foi publicado. O Gravewright segue em desenvolvimento Alpha; mantenha backups
+das campanhas importantes e consulte os fluxos disponíveis no
+[guia de uso](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/user-guide.md).
 
-| Recurso | Por onde começar |
+### Encontre suas ferramentas
+
+| Projeto | O que leva para sua mesa |
 | --- | --- |
-| Instalação e primeiro acesso | [Primeiros passos](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/getting-started.md) |
-| Executor Windows e backups | [Guia do Runner](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/windows-runner.md) |
-| Hospedagem pela rede e HTTPS | [Implantação](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/deployment.md) |
-| Estrutura do código | [Arquitetura](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/architecture.md) e [mapa do código](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/code-map.md) |
-| Integrações e extensões | [Guia de APIs](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/api.md) e [guia de módulos](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/modules.md) |
-| Bugs e propostas de funcionalidades | [Issues](https://github.com/Gravewright/gravewright/issues) |
-| Código, documentação e traduções | [Como contribuir](https://github.com/Gravewright/gravewright/blob/main/CONTRIBUTING.pt-BR.md) |
-| Relatos de vulnerabilidades | [Política de segurança](https://github.com/Gravewright/gravewright/blob/main/SECURITY.pt-BR.md) |
+| [Gravewright VTT](https://github.com/Gravewright/gravewright) | A mesa virtual, guias de instalação e APIs de integração. |
+| [Marketplace](https://github.com/Gravewright/marketplace) | Releases assinadas de módulos e sistemas. |
+| [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | Dados 3D para suas rolagens. |
+| [Translator](https://github.com/Gravewright/translator) | Catálogos de interface em português e espanhol, com escolha pessoal de idioma. |
 
-### Open source e módulos independentes
+### Ajude a preparar a próxima sessão
 
-O núcleo do Gravewright usa **GPL-3.0-only**, com a [permissão para módulos independentes](https://github.com/Gravewright/gravewright/blob/main/LICENSE-EXCEPTION.pt-BR.md) sob a seção 7. Módulos de terceiros escritos independentemente podem usar **qualquer licença, inclusive proprietária**, utilizando ou não as APIs fornecidas. Cópias e modificações da implementação do núcleo continuam sujeitas à licença dele.
+Conte como o Gravewright funciona na sua mesa, [relate um problema](https://github.com/Gravewright/gravewright/issues)
+ou ajude com traduções, acessibilidade e documentação. Desenvolvedores podem
+[criar integrações](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/api.md)
+e [desenvolver módulos](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/modules.md).
+Consulte o [guia de contribuição](https://github.com/Gravewright/gravewright/blob/main/CONTRIBUTING.pt-BR.md)
+e a [política de segurança](https://github.com/Gravewright/gravewright/blob/main/SECURITY.pt-BR.md).
 
-Dependências, recursos herdados e conteúdo dos usuários mantêm seus próprios termos aplicáveis. Consulte a [política de licenciamento](https://github.com/Gravewright/gravewright/blob/main/LICENSING.pt-BR.md) e os [avisos de terceiros](https://github.com/Gravewright/gravewright/blob/main/THIRD_PARTY_NOTICES.pt-BR.md).
+O núcleo usa **GPL-3.0-only** com uma
+[permissão para módulos independentes](https://github.com/Gravewright/gravewright/blob/main/LICENSE-EXCEPTION.pt-BR.md).
+Módulos escritos de forma independente podem usar qualquer licença, inclusive
+proprietária. Cópias e modificações da implementação do núcleo continuam sujeitas
+à licença dele. Consulte a [política de licenciamento](https://github.com/Gravewright/gravewright/blob/main/LICENSING.pt-BR.md)
+e os [avisos de terceiros](https://github.com/Gravewright/gravewright/blob/main/THIRD_PARTY_NOTICES.pt-BR.md).
