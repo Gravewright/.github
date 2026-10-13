@@ -31,16 +31,16 @@ Os dados da campanha ficam sob seu controle. O
 [guia do Runner](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/windows-runner.md)
 explica armazenamento, configurações e backups. A documentação apresenta outras formas de hospedar.
 
-### Disponível: Gravewright 0.2.1 Alpha
+### Disponível: Gravewright 0.2.2 Alpha
 
-Tenha mapas, cartas, fichas e chat sempre à mão. A versão **0.2.1 Alpha** melhora
+Tenha mapas, cartas, fichas e chat sempre à mão. A versão **0.2.2 Alpha** melhora
 as janelas nativas de itens, o acesso a compêndios e as ferramentas que sistemas
 independentes usam para suas próprias fichas e automações de combate. O VTT
 oferece as ferramentas compartilhadas da campanha; os sistemas instalados
 fornecem as regras específicas de cada jogo.
 
-**[Baixe o Gravewright 0.2.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.1)** ·
-[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.2.1/docs/releases/0.2.1.md)
+**[Baixe o Gravewright 0.2.2 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.2)** ·
+[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.2.2/docs/releases/0.2.2.md)
 
 O Gravewright segue em desenvolvimento Alpha; mantenha backups
 das campanhas importantes e consulte os fluxos disponíveis no

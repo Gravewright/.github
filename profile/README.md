@@ -31,15 +31,15 @@ Your campaign data stays under your control. The
 [Runner guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/windows-runner.md)
 explains storage, settings and backups. Other hosting options are covered in the documentation.
 
-### Available now: Gravewright 0.2.1 Alpha
+### Available now: Gravewright 0.2.2 Alpha
 
-Keep maps, cards, character sheets and chat close at hand. Version **0.2.1 Alpha**
+Keep maps, cards, character sheets and chat close at hand. Version **0.2.2 Alpha**
 improves native item windows, compendium access and the tools that independent
 systems use to provide their own sheets and combat automation. The VTT supplies
 the shared campaign tools; installed systems provide their game-specific rules.
 
-**[Download Gravewright 0.2.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.1)** ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.2.1/docs/releases/0.2.1.md)
+**[Download Gravewright 0.2.2 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.2)** ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.2.2/docs/releases/0.2.2.md)
 
 Gravewright remains in active Alpha development; keep backups of
 important campaigns and check the [user guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/user-guide.md)
