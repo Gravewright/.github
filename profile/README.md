@@ -4,9 +4,9 @@
 
 [English](https://github.com/Gravewright/.github/blob/main/profile/README.md) · [Português (Brasil)](https://github.com/Gravewright/.github/blob/main/profile/README.pt-BR.md)
 
-Gravewright is a free, open-source virtual tabletop for your RPG campaigns. Prepare
-the scene, gather your group in the browser and keep maps, characters and session
-tools together in a world you host and control.
+Gravewright is a universal virtual tabletop for RPG campaigns: free, open source
+and hosted by you. Prepare maps, gather your group in the browser and keep tokens,
+character sheets, dice and campaign notes together in a world you control.
 
 **[Explore Gravewright](https://gravewright.com)** · [Download](https://github.com/Gravewright/gravewright/releases/latest) · [Getting started](https://github.com/Gravewright/gravewright/blob/main/docs/en/getting-started.md)
 
@@ -33,11 +33,10 @@ explains storage, settings and backups. Other hosting options are covered in the
 
 ### Available now: Gravewright 0.2.1 Alpha
 
-Bring content from compendiums into your campaign, configure items in native
-windows and keep cards, sheets and chat close at hand. Version **0.2.1 Alpha**
-improves these workflows and gives independent systems the tools to provide
-their own sheets and combat automation. Your chosen system owns its game rules;
-the VTT brings the table together.
+Keep maps, cards, character sheets and chat close at hand. Version **0.2.1 Alpha**
+improves native item windows, compendium access and the tools that independent
+systems use to provide their own sheets and combat automation. The VTT supplies
+the shared campaign tools; installed systems provide their game-specific rules.
 
 **[Download Gravewright 0.2.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.1)** ·
 [What's new](https://github.com/Gravewright/gravewright/blob/v0.2.1/docs/releases/0.2.1.md)
@@ -48,17 +47,14 @@ for supported workflows.
 
 ### Choose how you play
 
-Start with the included **PDF System**, or install an independent system for a
-dedicated sheet and rules workflow.
+Use maps, tokens, dice, journals and cards to run your campaign. With the included
+**PDF System**, bring a familiar sheet, map its fields and connect the character
+to a token. Dedicated sheets and rules automation come from independent systems;
+their coverage depends on the system you install.
 
-**[DnD 5e SRD 0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0)**
-offers character, monster and item sheets with selectable **2014 / SRD 5.1** or
-**2024 / SRD 5.2.1** rules. Drag licensed SRD entries into a sheet, resolve
-supported advancement choices and use edition-specific rests and resources.
-Its compendiums are partial and remain in English. The system and its trusted
-server companion install separately on **VTT 0.2.1 or newer** through the
-signed Marketplace. See the
-[installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
+Choose systems and modules through the signed
+[Marketplace](https://github.com/Gravewright/marketplace), or use the documented
+APIs to create tools for your group.
 
 **[Translator 0.1.2](https://github.com/Gravewright/marketplace/releases/tag/gravewright.translator-v0.1.2)**
 lets each player choose English, Brazilian Portuguese or Spanish for the
@@ -70,10 +66,14 @@ API; names and stories written by your group remain yours.
 | Project | What it brings to your table |
 | --- | --- |
 | [Gravewright VTT](https://github.com/Gravewright/gravewright) | The tabletop, installation guides and integration APIs. |
-| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Independent 5e sheets, partial licensed compendiums and selectable 2014/2024 rules. |
 | [Marketplace](https://github.com/Gravewright/marketplace) | Signed releases of modules and systems. |
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | 3D dice for your rolls. |
 | [Translator](https://github.com/Gravewright/translator) | Official interface localization and a shared translation API for independent modules. |
+| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One available independent system: [0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules. |
+
+The DnD example's partial SRD compendiums remain in English. Its system and
+**Server Rules 0.1.0** companion install separately on VTT 0.2.1 or newer.
+See its [installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
 
 ### Help shape the next session
 

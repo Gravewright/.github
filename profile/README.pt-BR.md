@@ -4,9 +4,9 @@
 
 [English](https://github.com/Gravewright/.github/blob/main/profile/README.md) · [Português (Brasil)](https://github.com/Gravewright/.github/blob/main/profile/README.pt-BR.md)
 
-O Gravewright é uma mesa virtual gratuita e open source para suas campanhas de RPG.
-Prepare a cena, reúna o grupo pelo navegador e tenha mapas, personagens e
-ferramentas de sessão em um mundo que você hospeda e controla.
+O Gravewright é uma mesa virtual universal para campanhas de RPG, gratuita, open
+source e hospedada por você. Prepare mapas, reúna o grupo pelo navegador e tenha
+tokens, fichas, dados e anotações da campanha em um mundo que você controla.
 
 **[Conheça o Gravewright](https://gravewright.com/pt-br.html)** · [Baixar](https://github.com/Gravewright/gravewright/releases/latest) · [Primeiros passos](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/getting-started.md)
 
@@ -33,11 +33,11 @@ explica armazenamento, configurações e backups. A documentação apresenta out
 
 ### Disponível: Gravewright 0.2.1 Alpha
 
-Traga conteúdo dos compêndios para a campanha, configure itens em janelas nativas
-e tenha cartas, fichas e chat sempre à mão. A versão **0.2.1 Alpha** melhora esses
-fluxos e oferece aos sistemas independentes as ferramentas para suas próprias
-fichas e automações de combate. O sistema escolhido cuida das regras do jogo;
-o VTT reúne sua mesa.
+Tenha mapas, cartas, fichas e chat sempre à mão. A versão **0.2.1 Alpha** melhora
+as janelas nativas de itens, o acesso a compêndios e as ferramentas que sistemas
+independentes usam para suas próprias fichas e automações de combate. O VTT
+oferece as ferramentas compartilhadas da campanha; os sistemas instalados
+fornecem as regras específicas de cada jogo.
 
 **[Baixe o Gravewright 0.2.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.1)** ·
 [Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.2.1/docs/releases/0.2.1.md)
@@ -48,17 +48,14 @@ das campanhas importantes e consulte os fluxos disponíveis no
 
 ### Escolha como jogar
 
-Comece com o **PDF System** incluído ou instale um sistema independente para ter
-uma ficha dedicada e ferramentas para suas regras.
+Use mapas, tokens, dados, diários e cartas para conduzir a campanha. Com o
+**PDF System** incluído, traga uma ficha conhecida, mapeie seus campos e vincule
+o personagem a um token. Fichas dedicadas e automações de regras vêm de sistemas
+independentes; a cobertura depende do sistema instalado.
 
-O **[DnD 5e SRD 0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0)**
-oferece fichas de personagem, monstro e item, com escolha entre
-**2014 / SRD 5.1** e **2024 / SRD 5.2.1**. Arraste entradas licenciadas do SRD
-para a ficha, resolva escolhas de progressão compatíveis e use descansos e
-recursos conforme a edição. Os compêndios são parciais e permanecem em inglês.
-O sistema e seu companion confiável de servidor são instalados separadamente
-no **VTT 0.2.1 ou mais recente**, pelo Marketplace assinado. Veja o
-[guia de instalação e os limites de automação](https://github.com/Gravewright/dnd-srd-5e/blob/main/README.pt-BR.md).
+Escolha sistemas e módulos pelo
+[Marketplace assinado](https://github.com/Gravewright/marketplace) ou use as APIs
+documentadas para criar ferramentas para o seu grupo.
 
 O **[Translator 0.1.2](https://github.com/Gravewright/marketplace/releases/tag/gravewright.translator-v0.1.2)**
 permite que cada jogador escolha inglês, português brasileiro ou espanhol para a
@@ -70,10 +67,15 @@ tradução; nomes e histórias escritos pelo seu grupo permanecem como vocês cr
 | Projeto | O que leva para sua mesa |
 | --- | --- |
 | [Gravewright VTT](https://github.com/Gravewright/gravewright) | A mesa virtual, guias de instalação e APIs de integração. |
-| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Fichas 5e independentes, compêndios parciais licenciados e escolha de regras de 2014/2024. |
 | [Marketplace](https://github.com/Gravewright/marketplace) | Releases assinadas de módulos e sistemas. |
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | Dados 3D para suas rolagens. |
 | [Translator](https://github.com/Gravewright/translator) | Localização oficial da interface e API de tradução compartilhada para módulos independentes. |
+| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um sistema independente disponível: [0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1. |
+
+Os compêndios parciais do exemplo DnD permanecem em inglês. O sistema e seu
+companion **Server Rules 0.1.0** são instalados separadamente no VTT 0.2.1 ou
+mais recente. Veja o
+[guia de instalação e os limites de automação](https://github.com/Gravewright/dnd-srd-5e/blob/main/README.pt-BR.md).
 
 ### Ajude a preparar a próxima sessão
 
