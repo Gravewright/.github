@@ -70,12 +70,13 @@ API oficial de tradução; nomes e histórias escritos pelo seu grupo permanecem
 | [Marketplace](https://github.com/Gravewright/marketplace) | Releases assinadas de módulos e sistemas. |
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | Dados 3D para suas rolagens. |
 | [Translator](https://github.com/Gravewright/translator) | Localização oficial da interface e API de tradução compartilhada para módulos independentes. |
-| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um sistema independente disponível: [0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1. |
+| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um pacote de sistema: [0.1.1](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.1), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1, fichas, compêndios e automações de combate. |
 | [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | Um pacote de sistema com fichas editáveis de personagens e NPCs, 13 modelos vazios de itens e automações SWADE: [0.1.1](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.1). |
 
-Os compêndios parciais do exemplo DnD permanecem em inglês. O sistema e seu
-companion **Server Rules 0.1.0** são instalados separadamente no VTT 0.2.1 ou
-mais recente. Veja o
+Os compêndios parciais do exemplo DnD permanecem em inglês. Instale o único
+**pacote de sistema 0.1.1** em **Sistemas** no **VTT 0.2.3 já publicado** e
+selecione-o para sua mesa. Fichas, compêndios e automações ficam juntos; o mestre
+avança o combate pela mesa. O VTT permanece inalterado. Veja o
 [guia de instalação e os limites de automação](https://github.com/Gravewright/dnd-srd-5e/blob/main/README.pt-BR.md).
 
 O pacote gratuito de Savage Worlds não inclui compêndios nem textos do livro.

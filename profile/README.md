@@ -69,11 +69,13 @@ same official translation API; names and stories written by your group remain yo
 | [Marketplace](https://github.com/Gravewright/marketplace) | Signed releases of modules and systems. |
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | 3D dice for your rolls. |
 | [Translator](https://github.com/Gravewright/translator) | Official interface localization and a shared translation API for independent modules. |
-| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One available independent system: [0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules. |
+| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One system package: [0.1.1](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.1), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules, sheets, compendiums and combat automation. |
 | [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | One system package with editable character and NPC sheets, 13 empty item templates and SWADE automation: [0.1.1](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.1). |
 
-The DnD example's partial SRD compendiums remain in English. Its system and
-**Server Rules 0.1.0** companion install separately on VTT 0.2.1 or newer.
+The DnD example's partial SRD compendiums remain in English. Install the single
+**0.1.1 system package** from **Systems** on the released **VTT 0.2.3** and select
+it for your table. Sheets, compendiums and automation stay together; the GM
+advances combat from the table. The VTT itself remains unchanged.
 See its [installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
 
 The free Savage Worlds package includes no compendiums or rulebook text. Install
