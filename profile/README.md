@@ -31,15 +31,15 @@ Your campaign data stays under your control. The
 [Runner guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/windows-runner.md)
 explains storage, settings and backups. Other hosting options are covered in the documentation.
 
-### Available now: Gravewright 0.2.2 Alpha
+### Available now: Gravewright 0.2.3 Alpha
 
-Keep maps, cards, character sheets and chat close at hand. Version **0.2.2 Alpha**
-improves native item windows, compendium access and the tools that independent
-systems use to provide their own sheets and combat automation. The VTT supplies
+Keep maps, cards, character sheets and chat close at hand. Version **0.2.3 Alpha**
+lets independent modules import their card artwork into native decks and keeps
+floating-window controls in your chosen interface language. The VTT supplies
 the shared campaign tools; installed systems provide their game-specific rules.
 
-**[Download Gravewright 0.2.2 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.2)** ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.2.2/docs/releases/0.2.2.md)
+**[Download Gravewright 0.2.3 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.3)** ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.2.3/docs/releases/0.2.3.md)
 
 Gravewright remains in active Alpha development; keep backups of
 important campaigns and check the [user guide](https://github.com/Gravewright/gravewright/blob/main/docs/en/user-guide.md)
@@ -58,8 +58,8 @@ APIs to create tools for your group.
 
 **[Translator 0.1.2](https://github.com/Gravewright/marketplace/releases/tag/gravewright.translator-v0.1.2)**
 lets each player choose English, Brazilian Portuguese or Spanish for the
-supported interface. Independent modules can use the same official translation
-API; names and stories written by your group remain yours.
+supported interface. English is the default. Independent modules can use the
+same official translation API; names and stories written by your group remain yours.
 
 ### Find your tools
 
@@ -70,10 +70,19 @@ API; names and stories written by your group remain yours.
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | 3D dice for your rolls. |
 | [Translator](https://github.com/Gravewright/translator) | Official interface localization and a shared translation API for independent modules. |
 | [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One available independent system: [0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules. |
+| [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | Editable character and NPC sheets, 13 empty item templates and SWADE automation: [0.1.0](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.0). |
 
 The DnD example's partial SRD compendiums remain in English. Its system and
 **Server Rules 0.1.0** companion install separately on VTT 0.2.1 or newer.
 See its [installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
+
+The free Savage Worlds package includes no compendiums or rulebook text. Its system
+and **Server Rules 0.1.0** companion install separately from the signed Marketplace
+on **VTT 0.2.3 or newer**. Choose or create a native Action Deck in
+**Extensions → Savage Worlds → Customize**, with three original deck styles
+available. Its interface supports English, Brazilian
+Portuguese and Spanish through the official Translator.
+See the [SWADE installation guide](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright#readme).
 
 ### Help shape the next session
 

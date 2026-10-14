@@ -31,16 +31,16 @@ Os dados da campanha ficam sob seu controle. O
 [guia do Runner](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/windows-runner.md)
 explica armazenamento, configurações e backups. A documentação apresenta outras formas de hospedar.
 
-### Disponível: Gravewright 0.2.2 Alpha
+### Disponível: Gravewright 0.2.3 Alpha
 
-Tenha mapas, cartas, fichas e chat sempre à mão. A versão **0.2.2 Alpha** melhora
-as janelas nativas de itens, o acesso a compêndios e as ferramentas que sistemas
-independentes usam para suas próprias fichas e automações de combate. O VTT
-oferece as ferramentas compartilhadas da campanha; os sistemas instalados
-fornecem as regras específicas de cada jogo.
+Tenha mapas, cartas, fichas e chat sempre à mão. A versão **0.2.3 Alpha** permite
+que módulos independentes importem suas imagens de cartas para baralhos nativos
+e mantém os controles das janelas flutuantes no idioma escolhido. O VTT oferece
+as ferramentas compartilhadas da campanha; os sistemas instalados fornecem as
+regras específicas de cada jogo.
 
-**[Baixe o Gravewright 0.2.2 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.2)** ·
-[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.2.2/docs/releases/0.2.2.md)
+**[Baixe o Gravewright 0.2.3 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.3)** ·
+[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.2.3/docs/releases/0.2.3.md)
 
 O Gravewright segue em desenvolvimento Alpha; mantenha backups
 das campanhas importantes e consulte os fluxos disponíveis no
@@ -59,8 +59,8 @@ documentadas para criar ferramentas para o seu grupo.
 
 O **[Translator 0.1.2](https://github.com/Gravewright/marketplace/releases/tag/gravewright.translator-v0.1.2)**
 permite que cada jogador escolha inglês, português brasileiro ou espanhol para a
-interface compatível. Módulos independentes podem usar a mesma API oficial de
-tradução; nomes e histórias escritos pelo seu grupo permanecem como vocês criaram.
+interface compatível. Inglês é o padrão. Módulos independentes podem usar a mesma
+API oficial de tradução; nomes e histórias escritos pelo seu grupo permanecem como vocês criaram.
 
 ### Encontre suas ferramentas
 
@@ -71,11 +71,19 @@ tradução; nomes e histórias escritos pelo seu grupo permanecem como vocês cr
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | Dados 3D para suas rolagens. |
 | [Translator](https://github.com/Gravewright/translator) | Localização oficial da interface e API de tradução compartilhada para módulos independentes. |
 | [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um sistema independente disponível: [0.1.0 Alpha](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.0), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1. |
+| [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | Fichas editáveis de personagens e NPCs, 13 modelos vazios de itens e automações SWADE: [0.1.0](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.0). |
 
 Os compêndios parciais do exemplo DnD permanecem em inglês. O sistema e seu
 companion **Server Rules 0.1.0** são instalados separadamente no VTT 0.2.1 ou
 mais recente. Veja o
 [guia de instalação e os limites de automação](https://github.com/Gravewright/dnd-srd-5e/blob/main/README.pt-BR.md).
+
+O pacote gratuito de Savage Worlds não inclui compêndios nem textos do livro. O
+sistema e seu complemento **Server Rules 0.1.0** são instalados separadamente pelo
+Marketplace assinado no **VTT 0.2.3 ou posterior**. Escolha ou crie um baralho de ação
+nativo em **Extensões → Savage Worlds → Personalizar**, com três estilos originais disponíveis.
+A interface oferece inglês, português brasileiro e espanhol pelo Translator oficial.
+Veja o [guia de instalação SWADE](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/blob/main/README.pt-BR.md).
 
 ### Ajude a preparar a próxima sessão
 
