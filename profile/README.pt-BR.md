@@ -20,31 +20,50 @@ tokens, fichas, dados e anotações da campanha em um mundo que você controla.
 
 ### Comece sua primeira mesa
 
-Baixe o ZIP completo do projeto, extraia e abra **Install Windows.bat**.
-O instalador prepara sua instalação e cria o **Gravewright Runner.bat**.
-Abra o Runner, crie sua conta de administrador no navegador e comece sua campanha.
-Esse launcher requer Windows 10 (1803+) ou Windows 11, em x64.
+Baixe o [ZIP completo da 0.3.0 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.0),
+extraia em uma pasta gravável e execute o instalador da sua plataforma:
+
+| Plataforma | Instalador | Iniciar a mesa |
+| --- | --- | --- |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+
+O instalador prepara ferramentas, dependências e configurações e cria seu Runner.
+Abra-o, crie a conta de administrador pelo navegador e comece sua campanha.
+Ferramentas e pacotes ausentes precisam de internet; consulte os requisitos no
+guia de cada plataforma. Configuração, dados da campanha e ferramentas gerenciadas
+ficam por padrão dentro da instalação extraída.
 
 O Runner inicia localmente no seu computador. Para convidar jogadores pela rede
-ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/deployment.md).
-Os dados da campanha ficam sob seu controle. O
-[guia do Runner](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/windows-runner.md)
-explica armazenamento, configurações e backups. A documentação apresenta outras formas de hospedar.
+ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/deployment.md).
+Os dados da campanha ficam sob seu controle.
 
-### Disponível: Gravewright 0.2.3 Alpha
+### Disponível: Gravewright 0.3.0 Alpha
 
-Tenha mapas, cartas, fichas e chat sempre à mão. A versão **0.2.3 Alpha** permite
-que módulos independentes importem suas imagens de cartas para baralhos nativos
-e mantém os controles das janelas flutuantes no idioma escolhido. O VTT oferece
-as ferramentas compartilhadas da campanha; os sistemas instalados fornecem as
-regras específicas de cada jogo.
+A versão **0.3.0 Alpha** traz criação de mapas, automação visual e intercâmbio
+de mapas para a mesa:
 
-**[Baixe o Gravewright 0.2.3 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.2.3)** ·
-[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.2.3/docs/releases/0.2.3.md)
+- **Map Builder.** Construa com tiles ou pintura de terreno, organize camadas nomeadas, importe suas imagens e mantenha projetos editáveis com salvamento automático e recuperação.
+- **Objetos Inteligentes.** Conecte portas, alavancas, tochas e regiões a comportamentos visuais com eventos, condições e ações.
+- **Importação e exportação de mapas.** Importe uma imagem pronta como fundo do Builder, ou arquivos `.uvtt`, `.dd2vtt` e `.df2vtt` como cenas nativas com paredes, portas e luzes suportadas. Exporte uma cópia compatível da cena nativa atual.
+- **Prepare antes de compartilhar.** Gere uma cena privada e aplique novas edições do projeto com **Atualizar cena**. Ativar a cena para os jogadores continua sendo uma ação separada.
 
-O Gravewright segue em desenvolvimento Alpha; mantenha backups
-das campanhas importantes e consulte os fluxos disponíveis no
-[guia de uso](https://github.com/Gravewright/gravewright/blob/main/docs/pt-BR/user-guide.md).
+Uma imagem pronta não reconstrói suas camadas originais; a importação Universal
+VTT cria cenas nativas, não projetos do Builder. O VTT oferece ferramentas
+genéricas de campanha; os sistemas instalados continuam responsáveis pelas
+regras de cada jogo.
+
+**[Baixe o Gravewright 0.3.0 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.0)** ·
+[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/releases/0.3.0.md) ·
+[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/map-builder.md) ·
+[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/universal-vtt.md)
+
+O Gravewright segue em desenvolvimento Alpha. A 0.3.0 acrescenta migrações de
+banco: faça backup das campanhas existentes e siga as
+[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/releases/0.3.0.md#download-e-atualização).
+Consulte os fluxos disponíveis no
+[guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/user-guide.md).
 
 ### Escolha como jogar
 
@@ -70,23 +89,25 @@ API oficial de tradução; nomes e histórias escritos pelo seu grupo permanecem
 | [Marketplace](https://github.com/Gravewright/marketplace) | Releases assinadas de módulos e sistemas. |
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | Dados 3D para suas rolagens. |
 | [Translator](https://github.com/Gravewright/translator) | Localização oficial da interface e API de tradução compartilhada para módulos independentes. |
-| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um pacote de sistema: [0.1.1](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.1), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1, fichas, compêndios e automações de combate. |
-| [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | Um pacote de sistema com fichas editáveis de personagens e NPCs, 13 modelos vazios de itens e automações SWADE: [0.1.1](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.1). |
+| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um pacote de sistema: [0.1.2](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.2), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1, fichas, compêndios e automações de combate. |
+| [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | Um pacote de sistema com fichas editáveis de personagens e NPCs, 13 modelos vazios de itens e automações SWADE: [0.1.2](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.2). |
 
-Os compêndios parciais do exemplo DnD permanecem em inglês. Instale o único
-**pacote de sistema 0.1.1** em **Sistemas** no **VTT 0.2.3 já publicado** e
-selecione-o para sua mesa. Fichas, compêndios e automações ficam juntos; o mestre
-avança o combate pela mesa. O VTT permanece inalterado. Veja o
+Os compêndios parciais do exemplo DnD permanecem em inglês. O guia da **0.1.2**
+documenta a instalação no **VTT 0.2.3**: instale o único pacote de sistema em
+**Sistemas** e selecione-o para sua mesa. Fichas, compêndios e automações ficam
+juntos; o mestre avança o combate pela mesa. Veja o
 [guia de instalação e os limites de automação](https://github.com/Gravewright/dnd-srd-5e/blob/main/README.pt-BR.md).
 
 O pacote gratuito de Savage Worlds não inclui compêndios nem textos do livro.
-Instale o **pacote completo do sistema 0.1.1** em **Sistemas** pelo Marketplace
-assinado no **VTT 0.2.3 já publicado** e selecione-o para a mesa. Fichas, modelos,
-arquivos e automações ficam dentro desse sistema; o mestre avança o combate pela
-mesa. Escolha ou crie um baralho de ação
+O guia da **0.1.2** documenta a instalação no **VTT 0.2.3** por **Sistemas** e pelo
+Marketplace assinado. Selecione o pacote completo do sistema para a mesa. Fichas,
+modelos, arquivos e automações ficam dentro desse sistema; o mestre avança o
+combate pela mesa. Escolha ou crie um baralho de ação
 nativo em **Extensões → Savage Worlds → Personalizar**, com três estilos originais disponíveis.
 A interface oferece inglês, português brasileiro e espanhol pelo Translator oficial.
 Veja o [guia de instalação SWADE](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/blob/main/README.pt-BR.md).
+
+Os guias dos sistemas documentam as versões compatíveis do host; confira-os antes de atualizar um sistema ou o VTT.
 
 ### Ajude a preparar a próxima sessão
 
