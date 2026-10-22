@@ -20,14 +20,14 @@ character sheets, dice and campaign notes together in a world you control.
 
 ### Start your first table
 
-Download the complete [0.3.0 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.0),
+Download the complete [0.3.1 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.1),
 extract it into a writable folder and run the installer for your platform:
 
 | Platform | Installer | Start the table |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 The installer prepares tools, dependencies and settings and creates your Runner.
 Open it, create your administrator account in the browser and start your campaign.
@@ -36,33 +36,34 @@ for requirements. Configuration, campaign data and managed tools stay inside the
 extracted installation by default.
 
 The Runner starts locally on your computer. To invite players over your network
-or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/deployment.md).
+or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/deployment.md).
 Your campaign data stays under your control.
 
-### Available now: Gravewright 0.3.0 Alpha
+### Available now: Gravewright 0.3.1 Alpha
 
-Version **0.3.0 Alpha** brings map authoring, visual automation and map interchange
-to the tabletop:
+Version **0.3.1 Alpha** improves campaign preparation and everyday play, with
+consistent forms, more interactive map tools and a translated Marketplace:
 
-- **Map Builder.** Build with tiles or terrain painting, organize named layers, import your artwork and keep editable projects with automatic saving and recovery.
-- **Smart Objects.** Connect doors, levers, torches and regions to visual behaviors using events, conditions and actions.
+- **Consistent forms.** Campaign cover uploads, account settings, package installation and tabletop dialogs share the host theme, keyboard access and layouts for smaller screens.
+- **Map Builder and interactive objects.** Create maps with tiles, terrain painting and named layers. Configure 14 editable object models and use object menus to change properties, appearance and behavior.
+- **Game edits return to the project.** Compatible edits to generated objects on the tabletop synchronize back to linked Builder projects, with conflict recovery that preserves local drafts.
+- **Dice and quest interactions.** Add roll requests and quest actions to map objects. Players choose when to roll, and game-specific rules stay in their system packages.
 - **Map imports and exports.** Import a finished image as a Builder background, or import `.uvtt`, `.dd2vtt` and `.df2vtt` files as native scenes with supported walls, doors and lights. Export a compatible copy of the current native scene.
-- **Prepare before sharing.** Generate a private scene and apply later project changes with **Update scene**. Activating it for players remains a separate action.
+- **Marketplace in your language.** Tags, categories and tag searches follow the language selected through Translator: English, Brazilian Portuguese or Spanish.
 
-A finished image does not reconstruct its original layers; Universal VTT imports
-create native scenes, not Builder projects. The VTT provides generic campaign
-tools; installed systems continue to own their game-specific rules.
+Generate or update a private scene before sharing it; activating it for players
+remains a separate action. A finished image does not reconstruct its original
+layers, and Universal VTT imports create native scenes rather than Builder projects.
 
-**[Download Gravewright 0.3.0 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.0)** ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/releases/0.3.0.md) ·
-[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/map-builder.md) ·
-[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/universal-vtt.md)
+**[Download Gravewright 0.3.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.1)** ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/releases/0.3.1.md) ·
+[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/map-builder.md) ·
+[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/universal-vtt.md)
 
-Gravewright remains in active Alpha development. Version 0.3.0 adds database
-migrations: back up existing campaigns and follow the
-[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/releases/0.3.0.md#download-and-upgrade).
-See the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/en/user-guide.md)
-for supported workflows.
+Gravewright remains in active Alpha development. See the
+[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/releases/0.3.1.md#download-and-upgrade)
+and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/user-guide.md)
+for installation and supported workflows.
 
 ### Choose how you play
 

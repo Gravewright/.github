@@ -20,14 +20,14 @@ tokens, fichas, dados e anotações da campanha em um mundo que você controla.
 
 ### Comece sua primeira mesa
 
-Baixe o [ZIP completo da 0.3.0 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.0),
+Baixe o [ZIP completo da 0.3.1 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.1),
 extraia em uma pasta gravável e execute o instalador da sua plataforma:
 
 | Plataforma | Instalador | Iniciar a mesa |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 O instalador prepara ferramentas, dependências e configurações e cria seu Runner.
 Abra-o, crie a conta de administrador pelo navegador e comece sua campanha.
@@ -36,34 +36,34 @@ guia de cada plataforma. Configuração, dados da campanha e ferramentas gerenci
 ficam por padrão dentro da instalação extraída.
 
 O Runner inicia localmente no seu computador. Para convidar jogadores pela rede
-ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/deployment.md).
+ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/deployment.md).
 Os dados da campanha ficam sob seu controle.
 
-### Disponível: Gravewright 0.3.0 Alpha
+### Disponível: Gravewright 0.3.1 Alpha
 
-A versão **0.3.0 Alpha** traz criação de mapas, automação visual e intercâmbio
-de mapas para a mesa:
+A versão **0.3.1 Alpha** melhora a preparação da campanha e o uso na sessão, com
+formulários consistentes, mais ferramentas interativas para mapas e um Marketplace traduzido:
 
-- **Map Builder.** Construa com tiles ou pintura de terreno, organize camadas nomeadas, importe suas imagens e mantenha projetos editáveis com salvamento automático e recuperação.
-- **Objetos Inteligentes.** Conecte portas, alavancas, tochas e regiões a comportamentos visuais com eventos, condições e ações.
+- **Formulários consistentes.** Upload de capas de campanha, configurações da conta, instalação de pacotes e janelas da mesa compartilham o tema do host, acesso pelo teclado e layouts para telas menores.
+- **Map Builder e objetos interativos.** Crie mapas com tiles, pintura de terreno e camadas nomeadas. Configure 14 modelos editáveis de objetos e use seus menus para alterar propriedades, aparência e comportamento.
+- **Edições da mesa voltam para o projeto.** Alterações compatíveis nos objetos gerados no tabuleiro são sincronizadas com os projetos vinculados do Builder, com recuperação de conflitos que preserva os rascunhos locais.
+- **Interações com dados e missões.** Adicione solicitações de rolagem e ações de missões aos objetos do mapa. Os jogadores escolhem quando rolar, e as regras de cada jogo continuam nos pacotes de sistema.
 - **Importação e exportação de mapas.** Importe uma imagem pronta como fundo do Builder, ou arquivos `.uvtt`, `.dd2vtt` e `.df2vtt` como cenas nativas com paredes, portas e luzes suportadas. Exporte uma cópia compatível da cena nativa atual.
-- **Prepare antes de compartilhar.** Gere uma cena privada e aplique novas edições do projeto com **Atualizar cena**. Ativar a cena para os jogadores continua sendo uma ação separada.
+- **Marketplace no seu idioma.** Tags, categorias e busca por tags acompanham o idioma escolhido pelo Translator: inglês, português brasileiro ou espanhol.
 
-Uma imagem pronta não reconstrói suas camadas originais; a importação Universal
-VTT cria cenas nativas, não projetos do Builder. O VTT oferece ferramentas
-genéricas de campanha; os sistemas instalados continuam responsáveis pelas
-regras de cada jogo.
+Gere ou atualize uma cena privada antes de compartilhá-la; ativar a cena para
+os jogadores continua sendo uma ação separada. Uma imagem pronta não reconstrói
+suas camadas originais, e a importação Universal VTT cria cenas nativas, não projetos do Builder.
 
-**[Baixe o Gravewright 0.3.0 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.0)** ·
-[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/releases/0.3.0.md) ·
-[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/map-builder.md) ·
-[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/universal-vtt.md)
+**[Baixe o Gravewright 0.3.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.1)** ·
+[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/releases/0.3.1.md) ·
+[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/map-builder.md) ·
+[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/universal-vtt.md)
 
-O Gravewright segue em desenvolvimento Alpha. A 0.3.0 acrescenta migrações de
-banco: faça backup das campanhas existentes e siga as
-[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/releases/0.3.0.md#download-e-atualização).
-Consulte os fluxos disponíveis no
-[guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.0/docs/pt-BR/user-guide.md).
+O Gravewright segue em desenvolvimento Alpha. Consulte as
+[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/releases/0.3.1.md#download-e-atualização)
+e o [guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/pt-BR/user-guide.md)
+para instalação e fluxos disponíveis.
 
 ### Escolha como jogar
 
