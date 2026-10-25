@@ -12,22 +12,22 @@ character sheets, dice and campaign notes together in a world you control.
 
 ### A place for your campaign
 
-- **Set the atmosphere.** Build scenes with lighting, fog, walls, audio and visual effects. Reveal the world at your pace.
+- **Set the atmosphere.** Build maps and scenes with lighting, fog, walls, audio and visual effects. Add Smart Objects that respond to interaction or movement.
 - **Bring your characters.** Use PDF sheets or an independent game system, with characters connected to tokens on the board.
 - **Keep the session moving.** Roll dice, share notes, draw cards and follow combat without leaving the table.
-- **Carry the story forward.** Keep journals, quests, handouts and discoveries together between sessions.
+- **Carry the story forward.** Prepare sessions outside the table with journals, quests, clocks, clues and mind maps. Keep journal history and campaign notes together.
 - **Make the table yours.** Host your own installation and extend it with systems and modules from the Marketplace.
 
 ### Start your first table
 
-Download the complete [0.3.1 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.1),
+Download the complete [0.3.3 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.3),
 extract it into a writable folder and run the installer for your platform:
 
 | Platform | Installer | Start the table |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 The installer prepares tools, dependencies and settings and creates your Runner.
 Open it, create your administrator account in the browser and start your campaign.
@@ -36,33 +36,37 @@ for requirements. Configuration, campaign data and managed tools stay inside the
 extracted installation by default.
 
 The Runner starts locally on your computer. To invite players over your network
-or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/deployment.md).
+or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/deployment.md).
 Your campaign data stays under your control.
 
-### Available now: Gravewright 0.3.1 Alpha
+### Available now: Gravewright 0.3.3 Alpha
 
-Version **0.3.1 Alpha** improves campaign preparation and everyday play, with
-consistent forms, more interactive map tools and a translated Marketplace:
+Version **0.3.3 Alpha** adds scene audiences, clearer tokens and more tools to
+create, automate and rehearse your maps:
 
-- **Consistent forms.** Campaign cover uploads, account settings, package installation and tabletop dialogs share the host theme, keyboard access and layouts for smaller screens.
-- **Map Builder and interactive objects.** Create maps with tiles, terrain painting and named layers. Configure 14 editable object models and use object menus to change properties, appearance and behavior.
-- **Game edits return to the project.** Compatible edits to generated objects on the tabletop synchronize back to linked Builder projects, with conflict recovery that preserves local drafts.
-- **Dice and quest interactions.** Add roll requests and quest actions to map objects. Players choose when to roll, and game-specific rules stay in their system packages.
-- **Map imports and exports.** Import a finished image as a Builder background, or import `.uvtt`, `.dd2vtt` and `.df2vtt` files as native scenes with supported walls, doors and lights. Export a compatible copy of the current native scene.
-- **Marketplace in your language.** Tags, categories and tag searches follow the language selected through Translator: English, Brazilian Portuguese or Spanish.
+- **Scenes for your group.** Create an empty map from a name, color, dimensions and grid choice. Activate a scene for everyone or selected players; identification dots show each player's destination.
+- **Build faster.** Group objects into layers, align and distribute selections, save reusable campaign objects and paint repeated objects with a brush. Preview activation areas while editing.
+- **Use your own Smart Objects.** Add behavior to uploaded artwork, define circular activation areas and connect events to lights and shader controls. Shader parameters accept fixed values or typed variable inputs.
+- **Test before sharing.** Rehearse movement, vision, interactions and area events as a player in a detached map. Behavior tests roll back their changes and leave the live scene intact.
+- **Clearer tokens.** Read sharper names and conditions, place bars above and below tokens, and choose bar colors, audiences, name display and turn indicators.
+- **Personal controls.** Share mouse pointers in each participant's ping color, choose whether to show or share pointers, map keyboard shortcuts and add titles to local measurements.
 
-Generate or update a private scene before sharing it; activating it for players
-remains a separate action. A finished image does not reconstruct its original
-layers, and Universal VTT imports create native scenes rather than Builder projects.
+Generate or update a private scene before sharing it. Import a finished image as
+a background, or bring `.uvtt`, `.dd2vtt` and `.df2vtt` files into Builder as a
+linked scene and editable project. Importing through the scene directory creates
+a native scene that Builder can adopt. A finished image does not reconstruct its
+original layers; Universal VTT conversion preserves the supported geometry and
+lights, with format limits described in the guide.
 
-**[Download Gravewright 0.3.1 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.1)** ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/releases/0.3.1.md) ·
-[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/map-builder.md) ·
-[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/universal-vtt.md)
+**[Download Gravewright 0.3.3 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.3)** ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/releases/0.3.3.md) ·
+[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/map-builder.md) ·
+[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/universal-vtt.md)
 
-Gravewright remains in active Alpha development. See the
-[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/releases/0.3.1.md#download-and-upgrade)
-and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.1/docs/en/user-guide.md)
+Gravewright remains in active Alpha development. Back up configuration, campaign
+data and local extensions together before upgrading. See the
+[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/releases/0.3.3.md#download-and-upgrade)
+and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/user-guide.md)
 for installation and supported workflows.
 
 ### Choose how you play
@@ -76,10 +80,11 @@ Choose systems and modules through the signed
 [Marketplace](https://github.com/Gravewright/marketplace), or use the documented
 APIs to create tools for your group.
 
-**[Translator 0.1.2](https://github.com/Gravewright/marketplace/releases/tag/gravewright.translator-v0.1.2)**
+**[Translator 0.1.4](https://github.com/Gravewright/marketplace/releases/tag/gravewright.translator-v0.1.4)**
 lets each player choose English, Brazilian Portuguese or Spanish for the
 supported interface. English is the default. Independent modules can use the
 same official translation API; names and stories written by your group remain yours.
+This release includes translations for the new table and MapBuilder controls.
 
 ### Find your tools
 
