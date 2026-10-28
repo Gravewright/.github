@@ -18,16 +18,18 @@ character sheets, dice and campaign notes together in a world you control.
 - **Carry the story forward.** Prepare sessions outside the table with journals, quests, clocks, clues and mind maps. Keep journal history and campaign notes together.
 - **Make the table yours.** Host your own installation and extend it with systems and modules from the Marketplace.
 
+Gravewright **0.3.4** adds four interface themes, layer-specific selection, F1–F8 shortcuts and a reorganized toolbar, with fixes for Firefox, combat stopping and subfolders. Savage Worlds **0.1.4** compacts sheets; the GM chooses **Wild Card** or **Extra** when creating an actor.
+
 ### Start your first table
 
-Download the complete [0.3.3 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.3),
+Download the complete [0.3.4 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.4),
 extract it into a writable folder and run the installer for your platform:
 
 | Platform | Installer | Start the table |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 The installer prepares tools, dependencies and settings and creates your Runner.
 Open it, create your administrator account in the browser and start your campaign.
@@ -36,20 +38,19 @@ for requirements. Configuration, campaign data and managed tools stay inside the
 extracted installation by default.
 
 The Runner starts locally on your computer. To invite players over your network
-or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/deployment.md).
+or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/deployment.md).
 Your campaign data stays under your control.
 
-### Available now: Gravewright 0.3.3 Alpha
+### Available now: Gravewright 0.3.4 Alpha
 
-Version **0.3.3 Alpha** adds scene audiences, clearer tokens and more tools to
-create, automate and rehearse your maps:
+Version **0.3.4 Alpha** improves everyday table controls:
 
-- **Scenes for your group.** Create an empty map from a name, color, dimensions and grid choice. Activate a scene for everyone or selected players; identification dots show each player's destination.
-- **Build faster.** Group objects into layers, align and distribute selections, save reusable campaign objects and paint repeated objects with a brush. Preview activation areas while editing.
-- **Use your own Smart Objects.** Add behavior to uploaded artwork, define circular activation areas and connect events to lights and shader controls. Shader parameters accept fixed values or typed variable inputs.
-- **Test before sharing.** Rehearse movement, vision, interactions and area events as a player in a detached map. Behavior tests roll back their changes and leave the live scene intact.
-- **Clearer tokens.** Read sharper names and conditions, place bars above and below tokens, and choose bar colors, audiences, name display and turn indicators.
-- **Personal controls.** Share mouse pointers in each participant's ping color, choose whether to show or share pointers, map keyboard shortcuts and add titles to local measurements.
+- **Edit the active layer.** Select walls, lights or game pieces in their own layer and switch with F1–F8.
+- **Find tools faster.** Secondary toolbar actions are grouped under Panels; chat controls follow the other windows.
+- **Choose a theme.** Classic, Ocean, Forest and Amethyst are available with browser persistence.
+- **Keep combat and folders in order.** Stopping combat clears participants; newly created subfolders are revealed automatically.
+- **Configure blank maps.** Set grid size, scale, measurement, folder and visibility when creating a map.
+- **Play in Firefox.** Rendering recovers after WebGL context loss, with improved texture initialization and resource loading.
 
 Generate or update a private scene before sharing it. Import a finished image as
 a background, or bring `.uvtt`, `.dd2vtt` and `.df2vtt` files into Builder as a
@@ -58,15 +59,15 @@ a native scene that Builder can adopt. A finished image does not reconstruct its
 original layers; Universal VTT conversion preserves the supported geometry and
 lights, with format limits described in the guide.
 
-**[Download Gravewright 0.3.3 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.3)** ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/releases/0.3.3.md) ·
-[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/map-builder.md) ·
-[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/universal-vtt.md)
+**[Download Gravewright 0.3.4 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.4)** ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/releases/0.3.4.md) ·
+[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/map-builder.md) ·
+[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/universal-vtt.md)
 
 Gravewright remains in active Alpha development. Back up configuration, campaign
 data and local extensions together before upgrading. See the
-[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/releases/0.3.3.md#download-and-upgrade)
-and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.3/docs/en/user-guide.md)
+[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/releases/0.3.4.md#download-and-upgrade)
+and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.4/docs/en/user-guide.md)
 for installation and supported workflows.
 
 ### Choose how you play
@@ -95,7 +96,7 @@ This release includes translations for the new table and MapBuilder controls.
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | 3D dice for your rolls. |
 | [Translator](https://github.com/Gravewright/translator) | Official interface localization and a shared translation API for independent modules. |
 | [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One system package: [0.1.2](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.1.2), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules, sheets, compendiums and combat automation. |
-| [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | One system package with editable character and NPC sheets, 13 empty item templates and SWADE automation: [0.1.2](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright/releases/tag/v0.1.2). |
+| [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | One system package with editable character and NPC sheets, 13 empty item templates and SWADE automation: [0.1.4](https://github.com/Gravewright/marketplace/releases/tag/gravewright.savage-worlds-v0.1.4). |
 
 The DnD example's partial SRD compendiums remain in English. Its **0.1.2** guide
 documents installation on **VTT 0.2.3**: install the single system package from
@@ -104,7 +105,7 @@ together; the GM advances combat from the table.
 See its [installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
 
 The free Savage Worlds package includes no compendiums or rulebook text. Its
-**0.1.2** guide documents installation on **VTT 0.2.3** through **Systems** and the
+**0.1.4** guide documents installation on **VTT 0.2.3** through **Systems** and the
 signed Marketplace. Select the complete system package for your table. Sheets,
 item templates, assets and automation stay inside that system; the GM advances
 combat from the table. Choose or create a native Action Deck in
