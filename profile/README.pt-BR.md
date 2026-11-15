@@ -18,18 +18,18 @@ tokens, fichas, dados e anotações da campanha em um mundo que você controla.
 - **Leve a história adiante.** Prepare sessões fora da mesa com diários, missões, relógios, pistas e mapas mentais. Mantenha o histórico dos diários e as anotações da campanha juntos.
 - **Deixe a mesa com a sua cara.** Hospede sua instalação e adicione sistemas e módulos pelo Marketplace.
 
-O Gravewright 0.3.5 melhora a entrega em tempo real, recupera comandos durante contenção temporária do banco e preserva o contexto da cena no chat de módulos. Jogadores autorizados podem ler compêndios de itens e magias. DnD 5e SRD 0.2.0 inclui 317 monstros do SRD 5.1 e 330 do SRD 5.2.1, além de 2.535 entradas de itens. Jogadores podem copiar itens legíveis para fichas editáveis. Validado com VTT 0.3.5 e 0.2.3. Baixe o ZIP do sistema, instale localmente e selecione 0.2.0 nas Extensões da mesa. Os compêndios continuam em inglês; importações para a biblioteca são exclusivas do mestre.
+O Gravewright 0.3.6 mantém os comandos dos jogadores independentes das atualizações em segundo plano e reduz carregamentos repetidos de cenas, chat e mapas mentais. Leituras do banco podem continuar durante gravações, e a renovação de presença considera melhor a espera pelo banco. DnD 5e SRD 0.2.0 inclui 317 monstros do SRD 5.1 e 330 do SRD 5.2.1, além de 2.535 entradas de itens. Jogadores podem copiar itens legíveis para fichas editáveis. Validado com VTT 0.3.5 e 0.2.3. Baixe o ZIP do sistema, instale localmente e selecione 0.2.0 nas Extensões da mesa. Os compêndios continuam em inglês; importações para a biblioteca são exclusivas do mestre.
 
 ### Comece sua primeira mesa
 
-Baixe o [ZIP completo da 0.3.5 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.5),
+Baixe o [ZIP completo da 0.3.6 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.6),
 extraia em uma pasta gravável e execute o instalador da sua plataforma:
 
 | Plataforma | Instalador | Iniciar a mesa |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 O instalador prepara ferramentas, dependências e configurações e cria seu Runner.
 Abra-o, crie a conta de administrador pelo navegador e comece sua campanha.
@@ -38,12 +38,12 @@ guia de cada plataforma. Configuração, dados da campanha e ferramentas gerenci
 ficam por padrão dentro da instalação extraída.
 
 O Runner inicia localmente no seu computador. Para convidar jogadores pela rede
-ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/deployment.md).
+ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/deployment.md).
 Os dados da campanha ficam sob seu controle.
 
-### Disponível: Gravewright 0.3.5 Alpha
+### Disponível: Gravewright 0.3.6 Alpha
 
-O Gravewright 0.3.5 melhora a entrega em tempo real, recupera comandos durante contenção temporária do banco e preserva o contexto da cena no chat de módulos. Jogadores autorizados podem ler compêndios de itens e magias.
+O Gravewright 0.3.6 mantém os comandos dos jogadores independentes das atualizações em segundo plano e reduz carregamentos repetidos de cenas, chat e mapas mentais. Leituras do banco podem continuar durante gravações, e a renovação de presença considera melhor a espera pelo banco.
 
 Gere ou atualize uma cena privada antes de compartilhá-la. Importe uma imagem
 pronta como fundo, ou arquivos `.uvtt`, `.dd2vtt` e `.df2vtt` pelo Builder para
@@ -52,15 +52,15 @@ cria uma cena nativa que o Builder pode adotar. Uma imagem pronta não reconstr�
 suas camadas originais; a conversão Universal VTT preserva a geometria e as luzes
 compatíveis, com os limites de formato descritos no guia.
 
-**[Baixe o Gravewright 0.3.5 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.5)** ·
-[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/releases/0.3.5.md) ·
-[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/map-builder.md) ·
-[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/universal-vtt.md)
+**[Baixe o Gravewright 0.3.6 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.6)** ·
+[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/releases/0.3.6.md) ·
+[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/map-builder.md) ·
+[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/universal-vtt.md)
 
 O Gravewright segue em desenvolvimento Alpha. Faça backup conjunto da configuração,
 dos dados da campanha e das extensões locais antes de atualizar. Consulte as
-[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/releases/0.3.5.md#download-e-atualização)
-e o [guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.5/docs/pt-BR/user-guide.md)
+[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/releases/0.3.6.md#download-e-atualização)
+e o [guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/pt-BR/user-guide.md)
 para instalação e fluxos disponíveis.
 
 ### Escolha como jogar
@@ -91,7 +91,7 @@ Esta versão inclui traduções para os novos controles da mesa e do MapBuilder.
 | [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | Um pacote de sistema: [0.2.0](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.2.0), com regras 2014/SRD 5.1 e 2024/SRD 5.2.1, fichas, compêndios e automações de combate. |
 | [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | Um pacote de sistema com fichas editáveis de personagens e NPCs, 13 modelos vazios de itens e automações SWADE: [0.1.4](https://github.com/Gravewright/marketplace/releases/tag/gravewright.savage-worlds-v0.1.4). |
 
-O DnD **0.2.0** inclui 647 monstros licenciados e permite copiar itens legíveis para fichas editáveis. Os compêndios permanecem em inglês. Validado com VTT **0.3.5** e **0.2.3**: instale o ZIP localmente, selecione **0.2.0** nas extensões da mesa e recarregue. Veja o
+O DnD **0.2.0** inclui 647 monstros licenciados e permite copiar itens legíveis para fichas editáveis. Os compêndios permanecem em inglês. Validado com VTT **0.3.6** e **0.2.3**: instale o ZIP localmente, selecione **0.2.0** nas extensões da mesa e recarregue. Veja o
 [guia de instalação e os limites de automação](https://github.com/Gravewright/dnd-srd-5e/blob/main/README.pt-BR.md).
 
 O pacote gratuito de Savage Worlds não inclui compêndios nem textos do livro.
