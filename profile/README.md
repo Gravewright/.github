@@ -18,18 +18,18 @@ character sheets, dice and campaign notes together in a world you control.
 - **Carry the story forward.** Prepare sessions outside the table with journals, quests, clocks, clues and mind maps. Keep journal history and campaign notes together.
 - **Make the table yours.** Host your own installation and extend it with systems and modules from the Marketplace.
 
-Gravewright 0.3.6 keeps player commands independent from background updates and reduces repeated loading of scenes, chat and mind maps. Database reads can continue during saves, and presence renewal handles database contention more accurately. DnD 5e SRD 0.2.0 includes 317 SRD 5.1 and 330 SRD 5.2.1 monsters, plus 2,535 item entries. Players can copy readable items into editable sheets. Validated with VTT 0.3.5 and 0.2.3. Download the system ZIP, install it locally and select 0.2.0 in table Extensions. Compendium content remains English; library imports remain GM-only.
+Gravewright 0.3.7 reduces repeated work in cards, combat, token dragging and audio, and limits concurrent background reads to reduce database contention during sessions. DnD 5e SRD 0.2.0 includes 317 SRD 5.1 and 330 SRD 5.2.1 monsters, plus 2,535 item entries. Players can copy readable items into editable sheets. Validated with VTT 0.3.5 and 0.2.3. Download the system ZIP, install it locally and select 0.2.0 in table Extensions. Compendium content remains English; library imports remain GM-only.
 
 ### Start your first table
 
-Download the complete [0.3.6 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.6),
+Download the complete [0.3.7 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.7),
 extract it into a writable folder and run the installer for your platform:
 
 | Platform | Installer | Start the table |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 The installer prepares tools, dependencies and settings and creates your Runner.
 Open it, create your administrator account in the browser and start your campaign.
@@ -38,12 +38,23 @@ for requirements. Configuration, campaign data and managed tools stay inside the
 extracted installation by default.
 
 The Runner starts locally on your computer. To invite players over your network
-or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/deployment.md).
+or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/deployment.md).
 Your campaign data stays under your control.
 
-### Available now: Gravewright 0.3.6 Alpha
+### Available now: Gravewright 0.3.7 Alpha
 
-Gravewright 0.3.6 keeps player commands independent from background updates and reduces repeated loading of scenes, chat and mind maps. Database reads can continue during saves, and presence renewal handles database contention more accurately.
+Gravewright 0.3.7 reduces database queries for scene cards and combat, loads only
+requested tokens for drag previews and skips collision checks for stationary
+tokens. Scene updates use fewer browser copies. Spatial audio avoids unnecessary
+calculations, and audio updates send changed fields while tools and modules keep
+receiving complete state.
+
+Presence checks avoid rewriting leases before renewal is due. A semaphore limits
+concurrent database reads for map layers, tokens, audio and combat to two per
+server event loop by default, while commands and network sends remain independent.
+The public SDK is preserved, and this
+release adds no database migrations relative to 0.3.6. See the release notes for
+operation-specific measurements and configuration.
 
 Generate or update a private scene before sharing it. Import a finished image as
 a background, or bring `.uvtt`, `.dd2vtt` and `.df2vtt` files into Builder as a
@@ -52,15 +63,16 @@ a native scene that Builder can adopt. A finished image does not reconstruct its
 original layers; Universal VTT conversion preserves the supported geometry and
 lights, with format limits described in the guide.
 
-**[Download Gravewright 0.3.6 Alpha](https://github.com/Gravewright/gravewright/releases/tag/v0.3.6)** ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/releases/0.3.6.md) ·
-[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/map-builder.md) ·
-[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/universal-vtt.md)
+**[Download Gravewright 0.3.7 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.7/Gravewright-0.3.7-django.zip)** ·
+[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.7/Gravewright-0.3.7-django.zip.sha256) ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/releases/0.3.7.md) ·
+[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/map-builder.md) ·
+[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/universal-vtt.md)
 
 Gravewright remains in active Alpha development. Back up configuration, campaign
 data and local extensions together before upgrading. See the
-[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/releases/0.3.6.md#download-and-upgrade)
-and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.6/docs/en/user-guide.md)
+[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/releases/0.3.7.md#download-and-upgrade)
+and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/user-guide.md)
 for installation and supported workflows.
 
 ### Choose how you play
