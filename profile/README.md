@@ -18,18 +18,20 @@ character sheets, dice and campaign notes together in a world you control.
 - **Carry the story forward.** Prepare sessions outside the table with journals, quests, clocks, clues and mind maps. Keep journal history and campaign notes together.
 - **Make the table yours.** Host your own installation and extend it with systems and modules from the Marketplace.
 
-Gravewright 0.3.7 reduces repeated work in cards, combat, token dragging and audio, and limits concurrent background reads to reduce database contention during sessions. DnD 5e SRD 0.2.0 includes 317 SRD 5.1 and 330 SRD 5.2.1 monsters, plus 2,535 item entries. Players can copy readable items into editable sheets. Validated with VTT 0.3.5 and 0.2.3. Download the system ZIP, install it locally and select 0.2.0 in table Extensions. Compendium content remains English; library imports remain GM-only.
+Gravewright 0.3.8 adds a personal dock, shared measurements and drawings,
+compendium folders and batch initiative. DnD 5e SRD 0.2.2 uses these capabilities
+and corrects supported automation for both SRD editions.
 
 ### Start your first table
 
-Download the complete [0.3.7 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.7),
+Download the complete [0.3.8 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.8),
 extract it into a writable folder and run the installer for your platform:
 
 | Platform | Installer | Start the table |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 The installer prepares tools, dependencies and settings and creates your Runner.
 Open it, create your administrator account in the browser and start your campaign.
@@ -38,23 +40,26 @@ for requirements. Configuration, campaign data and managed tools stay inside the
 extracted installation by default.
 
 The Runner starts locally on your computer. To invite players over your network
-or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/deployment.md).
+or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/deployment.md).
 Your campaign data stays under your control.
 
-### Available now: Gravewright 0.3.7 Alpha
+### Available now: Gravewright 0.3.8 Alpha
 
-Gravewright 0.3.7 reduces database queries for scene cards and combat, loads only
-requested tokens for drag previews and skips collision checks for stationary
-tokens. Scene updates use fewer browser copies. Spatial audio avoids unnecessary
-calculations, and audio updates send changed fields while tools and modules keep
-receiving complete state.
+Customize your dock by reordering tools and panels, hiding tools or pinning
+panels. Preferences stay separate for each profile and campaign on your device.
+Completed measurements and drawings are saved and shared with authorized scene
+viewers. Players edit their own work, GMs can edit all work, and GM-layer content
+stays private. Streamers remain read-only.
 
-Presence checks avoid rewriting leases before renewal is due. A semaphore limits
-concurrent database reads for map layers, tokens, audio and combat to two per
-server event loop by default, while commands and network sends remain independent.
-The public SDK is preserved, and this
-release adds no database migrations relative to 0.3.6. See the release notes for
-operation-specific measurements and configuration.
+System packages can organize compendiums into folders; GMs can set access for a
+whole folder. Packages can also submit initiative rolls in one batch, preserving
+public and GM-only results and retrying the same interrupted request without
+rolling again. RPG rules remain in the system package.
+
+This release adds a database migration for initiative receipts. Run the normal
+installer workflow when upgrading; existing encounters, sheets and scene markers
+are preserved. Drawings saved before this release have no recorded author and
+remain editable by GMs only.
 
 Generate or update a private scene before sharing it. Import a finished image as
 a background, or bring `.uvtt`, `.dd2vtt` and `.df2vtt` files into Builder as a
@@ -63,16 +68,16 @@ a native scene that Builder can adopt. A finished image does not reconstruct its
 original layers; Universal VTT conversion preserves the supported geometry and
 lights, with format limits described in the guide.
 
-**[Download Gravewright 0.3.7 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.7/Gravewright-0.3.7-django.zip)** ·
-[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.7/Gravewright-0.3.7-django.zip.sha256) ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/releases/0.3.7.md) ·
-[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/map-builder.md) ·
-[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/universal-vtt.md)
+**[Download Gravewright 0.3.8 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.8/Gravewright-0.3.8-django.zip)** ·
+[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.8/Gravewright-0.3.8-django.zip.sha256) ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/releases/0.3.8.md) ·
+[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/map-builder.md) ·
+[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/universal-vtt.md)
 
 Gravewright remains in active Alpha development. Back up configuration, campaign
 data and local extensions together before upgrading. See the
-[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/releases/0.3.7.md#download-and-upgrade)
-and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.7/docs/en/user-guide.md)
+[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/releases/0.3.8.md#download-and-upgrade)
+and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/user-guide.md)
 for installation and supported workflows.
 
 ### Choose how you play
@@ -100,11 +105,24 @@ This release includes translations for the new table and MapBuilder controls.
 | [Marketplace](https://github.com/Gravewright/marketplace) | Signed releases of modules and systems. |
 | [3D Dice](https://github.com/Gravewright/Gravewright-3D-Dice) | 3D dice for your rolls. |
 | [Translator](https://github.com/Gravewright/translator) | Official interface localization and a shared translation API for independent modules. |
-| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One system package: [0.2.0](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.2.0), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules, sheets, compendiums and combat automation. |
+| [DnD 5e SRD](https://github.com/Gravewright/dnd-srd-5e) | One system package: [0.2.2](https://github.com/Gravewright/dnd-srd-5e/releases/tag/v0.2.2), with 2014/SRD 5.1 and 2024/SRD 5.2.1 rules, sheets, compendiums and combat automation. |
 | [Savage Worlds Compatibility Package for Gravewright](https://github.com/Gravewright/Savage-Worlds-Compatibility-Package-for-Gravewright) | One system package with editable character and NPC sheets, 13 empty item templates and SWADE automation: [0.1.4](https://github.com/Gravewright/marketplace/releases/tag/gravewright.savage-worlds-v0.1.4). |
 
-DnD 5e SRD 0.2.0 includes 317 SRD 5.1 and 330 SRD 5.2.1 monsters, plus 2,535 item entries. Players can copy readable items into editable sheets. Validated with VTT 0.3.5 and 0.2.3. Download the system ZIP, install it locally and select 0.2.0 in table Extensions. Compendium content remains English; library imports remain GM-only.
-See its [installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
+DnD 5e SRD **0.2.2** includes 317 SRD 5.1 and 330 SRD 5.2.1 monsters, plus
+2,535 item entries in partial, licensed collections. On VTT **0.3.8**, its
+22 compendium packs appear in one folder with a subfolder per edition, and
+initiative uses native batches. This version corrects supported automation for
+AC, Constitution-based HP, protection items and other declared SRD features.
+
+Install the signed [0.2.2 package from the Marketplace](https://github.com/Gravewright/marketplace/releases/tag/gravewright.5e-srd-v0.2.2),
+or use the system release ZIP with the local system installer. Select **0.2.2**
+in the table's **Settings → Extensions** and reload open tables. VTT **0.2.3**
+and **0.3.7** remain supported, with a flat compendium list and the older
+initiative path. Compendium content stays English; players can copy readable
+items into editable sheets, while library imports remain GM-only. Existing
+copies of corrected items may need to be added again from the compendium; see the
+[release notes](https://github.com/Gravewright/dnd-srd-5e/blob/v0.2.2/docs/releases/0.2.2.md)
+and [installation guide and automation limits](https://github.com/Gravewright/dnd-srd-5e#readme).
 
 The free Savage Worlds package includes no compendiums or rulebook text. Its
 **0.1.4** guide documents installation on **VTT 0.2.3** through **Systems** and the
