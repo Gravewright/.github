@@ -18,20 +18,20 @@ tokens, fichas, dados e anotações da campanha em um mundo que você controla.
 - **Leve a história adiante.** Prepare sessões fora da mesa com diários, missões, relógios, pistas e mapas mentais. Mantenha o histórico dos diários e as anotações da campanha juntos.
 - **Deixe a mesa com a sua cara.** Hospede sua instalação e adicione sistemas e módulos pelo Marketplace.
 
-O Gravewright 0.3.8 traz dock pessoal, medições e desenhos compartilhados,
-pastas de compêndios e iniciativa em lote. O DnD 5e SRD 0.2.2 usa essas capacidades
-e corrige automações compatíveis com as duas edições do SRD.
+O Gravewright 0.3.9 traz módulos de compêndio independentes, compêndios de
+diários e uma biblioteca que mantém uma versão instalada por pacote. As camadas
+da cena são atualizadas separadamente, com ajustes nas sombras e nos tokens.
 
 ### Comece sua primeira mesa
 
-Baixe o [ZIP completo da 0.3.8 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.8),
+Baixe o [ZIP completo da 0.3.9 e seu checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.9),
 extraia em uma pasta gravável e execute o instalador da sua plataforma:
 
 | Plataforma | Instalador | Iniciar a mesa |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 O instalador prepara ferramentas, dependências e configurações e cria seu Runner.
 Abra-o, crie a conta de administrador pelo navegador e comece sua campanha.
@@ -40,28 +40,32 @@ guia de cada plataforma. Configuração, dados da campanha e ferramentas gerenci
 ficam por padrão dentro da instalação extraída.
 
 O Runner inicia localmente no seu computador. Para convidar jogadores pela rede
-ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/deployment.md).
+ou pela internet, siga o [guia de hospedagem](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/deployment.md).
 Os dados da campanha ficam sob seu controle.
 
-### Disponível: Gravewright 0.3.8 Alpha
+### Disponível: Gravewright 0.3.9 Alpha
 
-Personalize a dock reordenando ferramentas e painéis, ocultando ferramentas ou
-fixando painéis. As preferências ficam separadas por perfil e campanha neste
-dispositivo. Medições e desenhos concluídos são salvos e compartilhados com quem
-tem acesso à cena. Jogadores editam o próprio trabalho, mestres podem editar
-tudo, e o conteúdo da camada GM permanece privado. Streamers continuam somente
-leitura.
+Instale módulos de compêndio junto do seu sistema de jogo. Os módulos podem
+fornecer diários para qualquer sistema, ou compêndios de atores, itens e magias
+para um sistema compatível. O mestre os ativa por mesa; o servidor confere os
+requisitos de sistema e mantém as permissões de acesso aos compêndios.
+Documentos importados permanecem na campanha após desativar ou remover o módulo.
 
-Pacotes de sistema podem organizar compêndios em pastas; o mestre pode definir o
-acesso de uma pasta inteira. Os pacotes também podem enviar rolagens de iniciativa
-em um lote, preservando resultados públicos e privados para mestres e repetindo
-uma requisição interrompida sem rolar de novo. As regras de RPG permanecem no
-pacote de sistema.
+As bibliotecas de Sistemas e Módulos mostram um cartão por pacote. Instalar uma
+versão mais nova substitui a anterior, atualiza a seleção das mesas e preserva
+os dados salvos do módulo. Apps Django ativos trocam após a reinicialização
+supervisionada. Os cartões identificam compêndios, sistemas exigidos e apps de
+servidor, e a busca inclui essas etiquetas.
 
-Esta versão acrescenta uma migração de banco para os recibos de iniciativa.
-Execute o fluxo normal do instalador ao atualizar; combates, fichas e marcadores
-existentes são preservados. Desenhos salvos antes desta versão não têm autor
-registrado e continuam editáveis apenas por mestres.
+Desenhos, cartas, luzes e outras camadas da cena são atualizados separadamente.
+As sombras das luzes reutilizam seus polígonos, e a arte dos tokens usa uma
+malha recortada no formato do token. Operadores podem escolher WebP com perdas
+para novos tiles de mapas; o padrão continua sem perdas.
+
+Esta versão não acrescenta migrações de banco em relação à 0.3.8. Faça backup da
+instalação e use o fluxo normal do instalador ao atualizar. Os novos módulos de
+compêndio exigem VTT 0.3.9; pacotes de sistema existentes mantêm a compatibilidade.
+Consulte o [guia de módulos](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/modules.md).
 
 Gere ou atualize uma cena privada antes de compartilhá-la. Importe uma imagem
 pronta como fundo, ou arquivos `.uvtt`, `.dd2vtt` e `.df2vtt` pelo Builder para
@@ -70,16 +74,16 @@ cria uma cena nativa que o Builder pode adotar. Uma imagem pronta não reconstr�
 suas camadas originais; a conversão Universal VTT preserva a geometria e as luzes
 compatíveis, com os limites de formato descritos no guia.
 
-**[Baixe o Gravewright 0.3.8 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.8/Gravewright-0.3.8-django.zip)** ·
-[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.8/Gravewright-0.3.8-django.zip.sha256) ·
-[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/releases/0.3.8.md) ·
-[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/map-builder.md) ·
-[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/universal-vtt.md)
+**[Baixe o Gravewright 0.3.9 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.9/Gravewright-0.3.9-django.zip)** ·
+[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.9/Gravewright-0.3.9-django.zip.sha256) ·
+[Novidades da versão](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/releases/0.3.9.md) ·
+[Guia do Map Builder](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/map-builder.md) ·
+[Guia do Universal VTT](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/universal-vtt.md)
 
 O Gravewright segue em desenvolvimento Alpha. Faça backup conjunto da configuração,
 dos dados da campanha e das extensões locais antes de atualizar. Consulte as
-[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/releases/0.3.8.md#download-e-atualização)
-e o [guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/pt-BR/user-guide.md)
+[instruções de atualização](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/releases/0.3.9.md#download-e-atualização)
+e o [guia de uso](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/pt-BR/user-guide.md)
 para instalação e fluxos disponíveis.
 
 ### Escolha como jogar

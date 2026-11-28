@@ -18,20 +18,20 @@ character sheets, dice and campaign notes together in a world you control.
 - **Carry the story forward.** Prepare sessions outside the table with journals, quests, clocks, clues and mind maps. Keep journal history and campaign notes together.
 - **Make the table yours.** Host your own installation and extend it with systems and modules from the Marketplace.
 
-Gravewright 0.3.8 adds a personal dock, shared measurements and drawings,
-compendium folders and batch initiative. DnD 5e SRD 0.2.2 uses these capabilities
-and corrects supported automation for both SRD editions.
+Gravewright 0.3.9 adds independent compendium modules, journal packs and a
+package library that keeps one installed version per package. Scene layers
+refresh independently, with updated light-shadow and token rendering.
 
 ### Start your first table
 
-Download the complete [0.3.8 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.8),
+Download the complete [0.3.9 project ZIP and checksum](https://github.com/Gravewright/gravewright/releases/tag/v0.3.9),
 extract it into a writable folder and run the installer for your platform:
 
 | Platform | Installer | Start the table |
 | --- | --- | --- |
-| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
-| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
-| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
+| [Windows 10 (1803+) / 11, x64](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/windows-runner.md) | `Install Windows.bat` | `Gravewright Runner.bat` |
+| [Linux, x64 / ARM64](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/linux-runner.md) | `bash "./Install Linux.sh"` | `bash "./Gravewright Runner.sh"` |
+| [macOS 13.5+, Intel / Apple Silicon](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/macos-runner.md) | `Install macOS.command` | `Gravewright Runner.command` |
 
 The installer prepares tools, dependencies and settings and creates your Runner.
 Open it, create your administrator account in the browser and start your campaign.
@@ -40,26 +40,32 @@ for requirements. Configuration, campaign data and managed tools stay inside the
 extracted installation by default.
 
 The Runner starts locally on your computer. To invite players over your network
-or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/deployment.md).
+or the internet, follow the [hosting guide](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/deployment.md).
 Your campaign data stays under your control.
 
-### Available now: Gravewright 0.3.8 Alpha
+### Available now: Gravewright 0.3.9 Alpha
 
-Customize your dock by reordering tools and panels, hiding tools or pinning
-panels. Preferences stay separate for each profile and campaign on your device.
-Completed measurements and drawings are saved and shared with authorized scene
-viewers. Players edit their own work, GMs can edit all work, and GM-layer content
-stays private. Streamers remain read-only.
+Install compendium modules alongside your game system. Modules can provide
+journals for every system, or actor, item and spell packs for a compatible
+system. GMs activate them per table; the server checks system requirements and
+keeps compendium access permissions. Imported documents remain in the campaign
+after a module is deactivated or removed.
 
-System packages can organize compendiums into folders; GMs can set access for a
-whole folder. Packages can also submit initiative rolls in one batch, preserving
-public and GM-only results and retrying the same interrupted request without
-rolling again. RPG rules remain in the system package.
+The Systems and Modules libraries show one card per package. Installing a newer
+version replaces the previous one, moves table selections and preserves module
+storage. Active Django apps switch after a supervised restart. Installed cards
+identify compendiums, required systems and server apps, and search includes
+these labels.
 
-This release adds a database migration for initiative receipts. Run the normal
-installer workflow when upgrading; existing encounters, sheets and scene markers
-are preserved. Drawings saved before this release have no recorded author and
-remain editable by GMs only.
+Drawings, cards, lights and other scene layers refresh independently. Light
+shadows reuse their polygons, and token artwork uses a shape-clipped mesh.
+Operators can choose lossy WebP for newly generated map tiles; lossless remains
+the default.
+
+This release adds no database migrations relative to 0.3.8. Back up your
+installation and use the normal installer workflow when upgrading. New
+compendium modules require VTT 0.3.9; existing system packages remain compatible.
+See the [module guide](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/modules.md).
 
 Generate or update a private scene before sharing it. Import a finished image as
 a background, or bring `.uvtt`, `.dd2vtt` and `.df2vtt` files into Builder as a
@@ -68,16 +74,16 @@ a native scene that Builder can adopt. A finished image does not reconstruct its
 original layers; Universal VTT conversion preserves the supported geometry and
 lights, with format limits described in the guide.
 
-**[Download Gravewright 0.3.8 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.8/Gravewright-0.3.8-django.zip)** ·
-[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.8/Gravewright-0.3.8-django.zip.sha256) ·
-[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/releases/0.3.8.md) ·
-[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/map-builder.md) ·
-[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/universal-vtt.md)
+**[Download Gravewright 0.3.9 Alpha](https://github.com/Gravewright/gravewright/releases/download/v0.3.9/Gravewright-0.3.9-django.zip)** ·
+[SHA-256](https://github.com/Gravewright/gravewright/releases/download/v0.3.9/Gravewright-0.3.9-django.zip.sha256) ·
+[What's new](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/releases/0.3.9.md) ·
+[Map Builder guide](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/map-builder.md) ·
+[Universal VTT guide](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/universal-vtt.md)
 
 Gravewright remains in active Alpha development. Back up configuration, campaign
 data and local extensions together before upgrading. See the
-[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/releases/0.3.8.md#download-and-upgrade)
-and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.8/docs/en/user-guide.md)
+[upgrade instructions](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/releases/0.3.9.md#download-and-upgrade)
+and the [user guide](https://github.com/Gravewright/gravewright/blob/v0.3.9/docs/en/user-guide.md)
 for installation and supported workflows.
 
 ### Choose how you play
